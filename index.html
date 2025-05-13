@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Search</title>
+</head>
+<body>
+  <h1>Movie Search</h1>
+  <input type="text" id="search" placeholder="Search movies...">
+  <input type="text" id="year" placeholder="Year (optional)">
+  <button onclick="fetchMovies(0)">Search</button>
+
+  <div id="movie-list"></div>
+
+  <div>
+    <button onclick="previousPage()">Previous</button>
+    <span id="page-indicator">Page 1</span>
+    <button onclick="nextPage()">Next</button>
+  </div>
+
+  <h2>Add a Movie</h2>
+  <form id="movie-form">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="text" id="genre" placeholder="Genre" required>
+    <input type="number" id="year" placeholder="Year" required>
+    <button type="submit">Add Movie</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
